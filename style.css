@@ -1,88 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     padding: 0;
     margin: 0;
 }
-/*flex-container*/
-.footer {
+
+.header {
     display: flex;
     flex-direction: column;
-}  
-
-.last {
-    margin-top: 100%;
-}
-
-/*flex-items*/
-.footer_one {
-    background-color: #131313; 
-    text-align: center;
     width: 100%;
-    height: 9em;
+    height: fit-content;
 }
 
-.footer_two {
-    text-align: center;
-    width: 100%;
-    height: 50px;
-    background-color: #000;
-    height: 5em;
+.part_one {
+    background: #000;
+    max-height: 20px;
 }
 
-/*inside footer one*/
-.footer_socials {
-    color: #fff;
-    font-size: larger;
-}
-
-/*the icons*/
-i {
-    margin: 25px 10px;
-    background-color: #333;
-    height: 20px;
-    width: 20px;
-    padding: 12px;
-    border: 2px solid #333;
-    border-radius: 50%;
-}
-
-i:hover {
-    cursor: pointer;
-    background-color: #131313;
-}
-
-/*footer linkss*/
-.footer_links_list {
-    font-family: Shentox,sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    justify-content: center;
-    list-style-type: none;
+.part_one {
     display: flex;
-    color: #555;
+    align-items: center;
+    color: #898888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
 }
 
-li {
-    margin-left: 10px;
+.nav_one {
+    display: flex;
+    flex-grow: 7;
 }
 
-li:hover {
+.nav_two {
+    display: flex;
+    flex-grow: 1;
+} 
+
+.list {
+    list-style: none;
+    margin: 0 6px;
+}
+
+.list:hover {
     cursor: pointer;
     color: #fff;
-    font-size: 13px;
 }
 
-.copyright {
-    color: #fff;
-    line-height: 5em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.part_two {
+    min-height: 30px;
 }
 
-.TNW_home {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.copyright > span {
-    color: #555;
+.part_three {
+    background: yellow;
+    min-height: 30px;
 }
