@@ -39,6 +39,29 @@
   cursor: pointer;
   color: #fff;
 }
+
+.white_bg {
+  background-color: #fff;
+  max-height: 20px;
+}
+
+.white_bg_list {
+  display: flex;
+  list-style: none;
+  color: rgb(139, 135, 135);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  padding: 5px 0;
+}
+
+.list_two {
+  margin: 0 5px;
+}
+
+.list_two:hover {
+  color: black;
+  cursor: pointer;
+}
   
 
 
