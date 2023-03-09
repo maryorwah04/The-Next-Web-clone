@@ -10,14 +10,17 @@
   width: 100%;
 }
 
+/*would on show on screen widths <500px*/
 .m_query_nav {
   display: none;
 }
 
+/*black background part*/
 .black_bg {
   background-color: black;
   max-height: 25px;
   display: flex;
+  justify-content: space-between;
   padding: 5px 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
@@ -25,12 +28,10 @@
 
 .black_bg_list_one {
   display: flex;
-  flex-grow: 8;
 }
 
 .black_bg_list_two {
   display: flex;
-  flex-grow: 1;
 }
 
 .list {
@@ -44,14 +45,17 @@
   color: #fff;
 }
 
+
+/*white background part*/
 .white_bg {
+  display: flex;
+  justify-content: space-between;
   background-color: #fff;
   max-height: 20px;
 }
 
 .white_bg_list {
   display: flex;
-  list-style: none;
   color: rgb(139, 135, 135);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
@@ -60,6 +64,17 @@
 
 .list_two {
   margin: 0 5px;
+  list-style: none;
+}
+
+.white_bg_search {
+  color: rgb(136, 120, 120);
+  padding: 0 5px;
+  border-left: 1px solid gray;
+}
+
+.white_bg_search:hover {
+  cursor: pointer;
 }
 
 .list_two:hover {
@@ -67,6 +82,8 @@
   cursor: pointer;
 }
 
+
+/*Yellow background part*/
 .yellow_bg {
   background-color: rgb(235, 235, 19);
   min-height: 30px;
@@ -82,56 +99,67 @@
   cursor: pointer;
 }
 
+
+/*media query for screen widths less than 500px,
+works well on screen widths >500px*/
 @media screen and (max-width: 500px) {
+  
+  /*for black background part not to show*/
  .black_bg {
     display: none;
  }
 
-.white_bg {
-  display: none;
+ /*for white background part not to show*/
+ .white_bg {
+    display: none;
  }
 
-.m_query_nav {
-  display: flex;
-  max-height: fit-content;
-}
+  /*new nav-bar for this screen*/
+ .m_query_nav {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+ }
 
-.logo {
-  flex-grow: 20;
-  font-size: 30px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 5px;
-}
+  /*The company logo*/
+ .logo {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+ }
 
-.navbar {
-  flex-grow: 1;
-  display: flex;
-}
+  /*hamburger menu and search*/
+ .navbar {  
+    display: flex;
+ }
 
-.bars {
-  display: flex;
-  flex-direction: column;
-}
+  /*hamburger menu*/
+ .bars {
+    display: flex;
+    padding: 0 3px;
+    flex-direction: column;
+ }
 
-.icon-bar {
-  width: 30px;
-  margin: 3px 0;
-  height: 5px;
-  background-color: #000;
-  border-radius: 4px;
-}
+ .icon-bar {
+    width: 30px;
+    margin: 3px 0;
+    height: 5px;
+    background-color: #000;
+    border-radius: 4px;
+ }
 
-.fa {
-  color: black;
-  margin: 0 10px;
-  font-size: 30px;
-  padding-right: 5px;
-  border-right: 2px solid #000;
-}
+  /*the search icon*/
+ .fa {
+   color: black;
+   margin: 0 10px;
+   font-size: 30px;
+   padding-right: 5px;
+   border-right: 2px solid #000;
+ }
 
-.bars, .fa:hover {
-  cursor: pointer;
-}
+ .bars, .fa:hover {
+    cursor: pointer;
+ }
 }
 
 
