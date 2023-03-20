@@ -5,6 +5,9 @@
 }
 
 .header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -99,26 +102,57 @@
   cursor: pointer;
 }
 
-.grid-container {
-  height: 500px;
-  display: grid;
-  grid-template-areas: 
-    'main main main side1'
-    'main main main side1'
-    'main main main side2'
-    'main main main side2';
-  gap: 10px;
+.flex-container {
+  margin-right: 10px;
+  margin-top: 80px;
+  height: fit-content;
+  display: flex;
 }
 
 .item1 {
-  grid-area: main;
+  margin: auto 10px;
+  width: 70%;
+  position: relative;
   background-image: linear-gradient(
     rgba(255, 61, 61, 0.562), rgba(0, 0, 0, 1)),
     url("images/Phone.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.date-time {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item1-topic {
+  margin-left: 10px;
+  margin-top: 200px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+}
+
+.item1-about {
+  margin: 10px 10px;
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-sub-container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .item2 {
-  grid-area: side1;
+  height: 500px;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 1)),
     url("images/account.jpeg");
@@ -127,7 +161,7 @@
 }
 
 .item3 {
-  grid-area: side2;
+  height: 100px;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 1)),
     url("images/duplicate.png");
