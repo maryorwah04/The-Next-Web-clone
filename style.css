@@ -103,14 +103,13 @@
 }
 
 .flex-container {
-  margin-right: 10px;
   margin-top: 80px;
   height: fit-content;
   display: flex;
 }
 
 .item1 {
-  margin: auto 10px;
+  margin: 0 10px;
   width: 70%;
   position: relative;
   background-image: linear-gradient(
@@ -152,7 +151,8 @@
 }
 
 .item2 {
-  height: 500px;
+  height: 250px;
+  position: relative;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 1)),
     url("images/account.jpeg");
@@ -160,13 +160,52 @@
   background-position: center;
 }
 
+.item2-topic {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.item2-about {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+
+}
+
 .item3 {
-  height: 100px;
+  position: relative;
+  margin-top: 10px;
+  height: 250px;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 1)),
     url("images/duplicate.png");
   background-size: cover;
   background-position: center;
+}
+
+.item3-topic {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.item3-about {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
 }
 
 /*media query for screen widths less than 500px,
@@ -185,6 +224,7 @@ works well on screen widths >500px*/
 
   /*new nav-bar for this screen*/
  .m_query_nav {
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     height: fit-content;
@@ -229,5 +269,16 @@ works well on screen widths >500px*/
     cursor: pointer;
  }
 }
+
+/*@media screen and (max-width: 810px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .item1 > img, .date-time {
+    display: none;
+  }
+}*/
 
 
