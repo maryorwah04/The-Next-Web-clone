@@ -99,6 +99,41 @@
   cursor: pointer;
 }
 
+.grid-container {
+  height: 500px;
+  display: grid;
+  grid-template-areas: 
+    'main main main side1'
+    'main main main side1'
+    'main main main side2'
+    'main main main side2';
+  gap: 10px;
+}
+
+.item1 {
+  grid-area: main;
+  background-image: linear-gradient(
+    rgba(255, 61, 61, 0.562), rgba(0, 0, 0, 1)),
+    url("images/Phone.jpeg");
+}
+
+.item2 {
+  grid-area: side1;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 1)),
+    url("images/account.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.item3 {
+  grid-area: side2;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 1)),
+    url("images/duplicate.png");
+  background-size: cover;
+  background-position: center;
+}
 
 /*media query for screen widths less than 500px,
 works well on screen widths >500px*/
