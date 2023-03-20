@@ -157,11 +157,10 @@ works well on screen widths >500px*/
  }
 
   /*The company logo*/
- .logo {
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 5px;
- }
+  img {
+    background-color: black;
+    padding: 10px;
+  }
 
   /*hamburger menu and search*/
  .navbar {  
