@@ -221,7 +221,7 @@
 .funding_rounds {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   height: 100%;
 }
 
@@ -258,8 +258,55 @@ ul.funding_rounds_list {
 
 .frb {
   height: 100%;
-  width: 255px;
-  background: #000;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box_one {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.box_one > img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.b_one_head {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2.5;
+  height: 40%;
+  background-color: rgb(255, 100, 10);
+}
+
+.b_one_price {
+  height: 60%;
+  background-color: rgb(236, 223, 223);
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.b_one_price_break {
+  font-size: 10px;
+  color: gray;
+}
+
+.box_two {
+  height: 30%;
+  background-color: rgb(248, 242, 242);
+}
+
+.box_three {
+  height: 30%;
+  background-color: rgb(248, 242, 242);
 }
 
 
