@@ -1,0 +1,16 @@
+// Define a variable
+$primary-color: #007bff;
+
+// Define a mixin
+@mixin button-styles {
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+// Use the mixin
+button {
+  @include button-styles;
+}

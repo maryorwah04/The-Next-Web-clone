@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -104,7 +105,7 @@
 
 .flex-container {
   margin-top: 80px;
-  height: 500px;
+  height: 510px;
   display: flex;
 }
 
@@ -145,7 +146,7 @@
 
 .flex-sub-container {
   width: 30%;
-  height: 100%;
+  height: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -207,6 +208,69 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
 }
+
+.body_two {
+  margin-top: 7%;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.funding_rounds {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+}
+
+.topic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+  color: rgb(255, 100, 10);
+}
+
+.topic > h3 {
+  font-size: 2rem;
+}
+
+ul.funding_rounds_list {
+  list-style: none;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.funding_rounds_list > li {
+  margin-right: 0.5rem;
+  padding: 10px;
+  border-right: 1px solid rgb(255, 100, 10);;
+}
+
+.funding_rounds_boxes {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.frb {
+  height: 100%;
+  width: 255px;
+  background: #000;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*media query for screen widths less than 500px,
 works well on screen widths >500px*/
