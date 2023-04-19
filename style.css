@@ -241,10 +241,34 @@
   font-size: 2rem;
 }
 
+.topic > h3:hover {
+  cursor: pointer;
+  color: #000;
+}
+
 ul.funding_rounds_list {
   display: flex;
   list-style: none;
   gap: 1rem;
+}
+
+ul.funding_rounds_list > li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.frb {
+  padding: 1rem;
+  width: 100%;
+  height: 250px;
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.box {
+  width: calc(100% / 4.2);
+  height: 100%;
+  background: #000;
 }
 
 
