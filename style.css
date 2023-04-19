@@ -214,10 +214,9 @@
 }
 
 .body_two {
-  margin-top: 7%;
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 300px;
   justify-content: center;
   align-items: center;
 }
@@ -227,6 +226,7 @@
   flex-direction: column;
   width: 90%;
   height: 100%;
+  gap: 1rem;
 }
 
 .topic {
@@ -242,93 +242,10 @@
 }
 
 ul.funding_rounds_list {
+  display: flex;
   list-style: none;
-  display: flex;
-  font-size: 1.2rem;
+  gap: 1rem;
 }
-
-.funding_rounds_list > li {
-  margin-right: 0.5rem;
-  padding: 10px;
-}
-
-.funding_rounds_boxes {
-  height: 80%;
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.frb {
-  height: 80%;
-  max-width: 250px;
-  display: flex;
-  flex-direction: column;
-}
-
-.box_one {
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.box_one > img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.b_one_head {
-  color: #fff;
-  font-size: 1em;
-  font-weight: 700;
-  text-align: end;
-  line-height: 2.5;
-  height: 40%;
-  background-color: rgb(255, 100, 10);
-  padding-right: 10px;
-
-}
-
-.b_one_price {
-  height: 60%;
-  background-color: rgb(236, 223, 223);
-  font-size: 1.5em;
-  font-weight: 700;
-  text-align: end;
-  padding-right: 10px;
-}
-
-.b_one_price_break {
-  font-size: 10px;
-  color: gray;
-}
-
-.box_two {
-  height: 30%;
-  background-color: rgb(248, 242, 242);
-  font-size: 0.7rem;
-}
-
-.box_two > ul {
-  list-style: none;
-}
-
-li {
-  margin: 10px;
-}
-
-.box_three {
-  height: 30%;
-  background-color: rgb(248, 242, 242);
-  font-size: 0.7rem;
-  padding-left: 10px;
-  padding-top: 10px;
-  border-top: 0.5px solid rgb(87, 82, 82);
-}
-
 
 
 
@@ -431,10 +348,8 @@ works well on screen widths >500px*/
   .item1, .item2, .item3 {
     width: 100%;
   }
-}
 
-@media screen and (max-width: 790px) {
-  .last {
-    display: none;
+  .topic {
+    flex-direction: column;
   }
 }
