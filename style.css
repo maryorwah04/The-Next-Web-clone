@@ -103,6 +103,10 @@
   cursor: pointer;
 }
 
+.body_one {
+  margin-bottom: 100px;
+}
+
 .flex-container {
   margin-top: 80px;
   height: 510px;
@@ -246,19 +250,19 @@ ul.funding_rounds_list {
 .funding_rounds_list > li {
   margin-right: 0.5rem;
   padding: 10px;
-  border-right: 1px solid rgb(255, 100, 10);;
 }
 
 .funding_rounds_boxes {
   height: 80%;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
 }
 
 .frb {
-  height: 100%;
-  width: 270px;
+  height: 80%;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
 }
@@ -280,10 +284,12 @@ ul.funding_rounds_list {
   color: #fff;
   font-size: 1em;
   font-weight: 700;
-  text-align: center;
+  text-align: end;
   line-height: 2.5;
   height: 40%;
   background-color: rgb(255, 100, 10);
+  padding-right: 10px;
+
 }
 
 .b_one_price {
@@ -291,7 +297,8 @@ ul.funding_rounds_list {
   background-color: rgb(236, 223, 223);
   font-size: 1.5em;
   font-weight: 700;
-  text-align: center;
+  text-align: end;
+  padding-right: 10px;
 }
 
 .b_one_price_break {
@@ -302,13 +309,25 @@ ul.funding_rounds_list {
 .box_two {
   height: 30%;
   background-color: rgb(248, 242, 242);
+  font-size: 0.7rem;
+}
+
+.box_two > ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px;
 }
 
 .box_three {
   height: 30%;
   background-color: rgb(248, 242, 242);
+  font-size: 0.7rem;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-top: 0.5px solid rgb(87, 82, 82);
 }
-
 
 
 
@@ -400,6 +419,7 @@ works well on screen widths >500px*/
     display: flex;
     flex-direction: column;
     width: 100vw;
+    height: 700px;
   }
 
   .flex-sub-container {
@@ -410,5 +430,11 @@ works well on screen widths >500px*/
 
   .item1, .item2, .item3 {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .last {
+    display: none;
   }
 }
